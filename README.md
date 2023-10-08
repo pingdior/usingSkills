@@ -1,5 +1,5 @@
 # usingGPT
-分享国外GPT三大金刚：chatGPT\Claude2.0\Bard的使用、比较和常用结构化提示词写法
+[分享国外GPT三大金刚：chatGPT\Claude2.0\Bard的使用、比较和常用结构化提示词写法](https://www.bilibili.com/video/BV1CF411r7yC/?spm_id_from=333.999.0.0&vd_source=116dd22e64fc447e82d65ff22f074d1b)
 
 ### 例子展示
 - chatGPT3.5：非结构：小红书爆款标题；结构（COT）：三个专家：营养、产品需求规格说明书专家、心理洞察伙伴（Younce）,以上例子可以从文件里看到（包括提示词妈妈）。

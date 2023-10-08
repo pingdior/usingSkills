@@ -4,7 +4,7 @@
 ### 例子展示
 - chatGPT3.5：非结构：小红书爆款标题；结构（COT）：三个专家：营养、产品需求规格说明书专家、心理洞察伙伴（Younce）,以上例子可以从文件里看到（包括提示词妈妈）。
     - 可以生成提示词的提示词：[Role-Prompt的妈妈.md](https://github.com/pingdior/usingGPT/blob/main/Role-Prompt%E7%9A%84%E5%A6%88%E5%A6%88.md)
-    - 可以对结构提示词进行评分的提示词：[Role- 结构提示词的评分专家.md](https://github.com/pingdior/usingGPT/blob/main/Role-%20%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6%E8%AE%BE%E8%AE%A1%E4%B8%93%E5%AE%B6.md)
+    - 可以对结构提示词进行评分的提示词：[Role- 结构提示词的评分专家.md](https://github.com/pingdior/usingGPT/blob/main/Role-%20%E7%BB%93%E6%9E%84%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E8%AF%84%E5%88%86%E4%B8%93%E5%AE%B6.md)
     - 可以通过产品定位、用户故事生成产品需求规格说明书的提示词：[Role- 产品需求规格说明书设计专家.md](https://github.com/pingdior/usingGPT/blob/main/Role-%20%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6%E8%AE%BE%E8%AE%A1%E4%B8%93%E5%AE%B6.md)
     - 可以通过输入个人资料和职位信息，自动生成匹配关键字、高质量的中英文简历：[Role- Resume ExpertV1.0.md](https://github.com/pingdior/usingGPT/blob/main/Role-%20Resume%20ExpertV1.0.md)
 - Claude2.0 论文解读，支持10万单词或短语解读，支持PDF、Docx、TXT、CSV、MD、ini 等很多格式
@@ -26,9 +26,9 @@
 
 ### 如何使用：
 - 目前国内可以用：我们可以直接在slackAPP上使用claude1.0、notion.ai
-- Claude2.0 网址：https://claude.ai/
-- Bard:https://bard.google.com/?hl=zh_CN
-- chatGPT3.5:https://chat.openai.com/
+- [Claude2.0 网址](https://claude.ai/)
+- [Bard](https://bard.google.com/?hl=zh_CN)
+- [chatGPT3.5](https://chat.openai.com/)
 
 另外大家可以看到，目前能更好使用GPT，写好提示词是非常重要的事情。目前普通和COT结构化的提示词，提升输出的准确率。
 

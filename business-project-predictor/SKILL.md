@@ -1,5 +1,5 @@
 ---
-name: role-business-project-predictor
+name: business-project-predictor
 description: Evaluates business project feasibility using 5 basic questions. Use when assessing startup viability, business model validation, or investment due diligence. Trigger phrases: "商业项目预判", "创业可行性", "商业模式", "5个基本问题"
 metadata:
   author: woodgaya@gmail.com

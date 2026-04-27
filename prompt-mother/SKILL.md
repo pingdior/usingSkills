@@ -1,5 +1,5 @@
 ---
-name: role-prompt-mother
+name: prompt-mother
 description: Transforms regular prompts into CRISPE framework optimized prompts. Use when improving prompts, applying CRISPE structure, or teaching prompt engineering. Trigger phrases: "Prompt工程师", "CRISPE", "优化Prompt", "提示词转化"
 metadata:
   author: woodgaya@gmail.com

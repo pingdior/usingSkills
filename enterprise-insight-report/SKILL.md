@@ -1,5 +1,5 @@
 ---
-name: role-enterprise-insight-report
+name: enterprise-insight-report
 description: Writes comprehensive company analysis reports from financial reports and news. Use when analyzing companies, writing investment reports, or conducting market research. Trigger phrases: "企业分析", "公司洞察", "财报分析", "发展报告"
 metadata:
   author: woodgaya@gmail.com

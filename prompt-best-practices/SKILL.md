@@ -1,5 +1,5 @@
 ---
-name: key-prompt-best-practices
+name: prompt-best-practices
 description: Key principles and best practices for excellent prompt writing. Use when learning prompt engineering, optimizing prompts, or teaching prompt design. Trigger phrases: "优秀提示词法则", "key提示词", "提示词最佳实践"
 metadata:
   author: woodgaya@gmail.com

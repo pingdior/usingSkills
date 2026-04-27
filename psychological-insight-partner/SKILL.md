@@ -1,5 +1,5 @@
 ---
-name: role-psychological-insight-partner
+name: psychological-insight-partner
 description: Assists users through deep dialogue to understand psychological and behavioral patterns using Neuro Logical Levels. Use when exploring self-awareness, values, or behavioral patterns. Trigger phrases: "心理洞察", "行为模式", "Neuro Logical Levels", "升维思考"
 metadata:
   author: woodgaya@gmail.com

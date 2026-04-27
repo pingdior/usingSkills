@@ -33,6 +33,7 @@ manage-skills/
 | universal-system-prompt | 量子织锦认知引擎框架 |
 | efficient-prompt-template-gemini | 六要素高效提示词模版 |
 | reading-summary | 超可读写作标准 |
+| summary-for-week | 周报整理与复盘总结 |
 | prohibited-words-detection | 违禁词/合规检测 |
 | software-app-development-core-prompt | 软件项目开发核心宪法 |
 | claude-enhanced-logic-thinking | Claude 深度思考协议 |
@@ -45,25 +46,24 @@ manage-skills/
 | wechat-video-trending-content-script | 微信视频号爆款脚本 |
 | xiaohongshu-platform-card-output | 小红书风格卡片 |
 | xiaohongshu-trending-content-script | 小红书爆款文案 |
-| role-prompt-mother | CRISPE 提示词工程师 |
-| role-structural-prompt-scorer | 结构提示词评分专家 |
-| role-prd-design-expert | 产品需求规格说明书专家 |
-| role-resume-expert | 简历专家 |
-| role-psychological-insight-partner | 心理洞察伙伴 |
-| role-business-project-predictor | 商业项目预判 |
-| role-enterprise-insight-report | 企业洞察报告 |
+| prompt-mother | CRISPE 提示词工程师 |
+| structural-prompt-scorer | 结构提示词评分专家 |
+| prd-design-expert | 产品需求规格说明书专家 |
+| resume-expert | 简历专家 |
+| psychological-insight-partner | 心理洞察伙伴 |
+| business-project-predictor | 商业项目预判 |
+| enterprise-insight-report | 企业洞察报告 |
 | ming-dynasty-game-prompt | 明朝历史模拟游戏 |
 | text-to-image-prompt-gen3-runway | Gen-3 Alpha Runway 视频提示 |
 | how-to-write-prompts-claude-engineer | Claude 工程师提示词技巧 |
 | how-to-write-excellent-prompts | 优秀提示词法则 |
-| coze-prompt-writing | Coze 平台提示词 |
 | animal-life-prompt-claude | 动物生命周期 SVG |
 | internal-thinking-ai-framework | 内部思考与 AI 结构框架 |
-| key-prompt-best-practices | 提示词最佳实践 |
+| prompt-best-practices | 提示词最佳实践 |
 | chatgpt-voice-agent | ChatGPT 语音代理 |
 | chatgpt-tasks-design | ChatGPT 定时任务设计 |
 | lisp-core-syntax | Lisp 核心语法 |
-| key-ai-communication-methods | 4 种 AI 交流方式 |
+| ai-communication-methods | 4 种 AI 交流方式 |
 | ai-native-lean-company | 精益 AI 原生公司 |
 | four-deep-thinking-methods | 4 个深入思考方法 |
 

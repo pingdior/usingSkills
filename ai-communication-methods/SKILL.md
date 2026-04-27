@@ -1,5 +1,5 @@
 ---
-name: key-ai-communication-methods
+name: ai-communication-methods
 description: Four communication strategies based on knowledge overlap (I know you don't, you know I don't, we both don't, we both know). Use when designing AI interaction, teaching communication, or optimizing human-AI dialogue. Trigger phrases: "4种交流方式", "认知差异", "沟通策略", "知识重叠"
 metadata:
   author: woodgaya@gmail.com

@@ -26,7 +26,7 @@ manage-skills/
 - **metadata.author**：统一为 `woodgaya@gmail.com`
 - **无 README.md**：技能文件夹内不包含 README
 
-## 技能列表（36 个）
+## 技能列表（37 个）
 
 | 技能名称 | 描述 |
 |---------|------|
@@ -65,6 +65,7 @@ manage-skills/
 | lisp-core-syntax | Lisp 核心语法 |
 | ai-communication-methods | 4 种 AI 交流方式 |
 | ai-native-lean-company | 精益 AI 原生公司 |
+| lovart-word2videostory | 文字→视频故事板生成技能（Word-to-VideoStory） — 8步管道：脚本分析→角色资产→分镜拆解→画面提示词→AI图像生成→专业排版 |
 | four-deep-thinking-methods | 4 个深入思考方法 |
 
 ## 使用方式

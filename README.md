@@ -3,7 +3,7 @@
 技能管理项目，包含符合 Anthropic 官方标准的 Claude Skill 文件集合。
 
 - **作者**：pingdior
-- **技能数量**：37 个
+- **技能数量**：40 个
 
 ## 项目结构
 
@@ -26,7 +26,7 @@ manage-skills/
 - **metadata.author**：统一为 `pingdior`
 - **无 README.md**：技能文件夹内不包含 README
 
-## 技能列表（37 个）
+## 技能列表（40 个）
 
 | 技能名称 | 描述 |
 |---------|------|

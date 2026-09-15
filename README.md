@@ -204,4 +204,6 @@ manage-skills/
 
 ## 许可
 
+Copyright (c) 2026 pingdior
+
 本项目采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，详见 `LICENSE`。

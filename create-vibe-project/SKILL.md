@@ -2,7 +2,7 @@
 name: create-vibe-project
 description: Vibe Engineering Discipline v1.0 — 8 principles for disciplined AI-assisted "Vibe Coding". Use this skill when starting a new vibe-coding project, setting ground rules with an AI coding agent, or onboarding a team to structured AI collaboration.
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

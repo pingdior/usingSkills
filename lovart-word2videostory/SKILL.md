@@ -2,7 +2,7 @@
 name: lovart-word2videostory
 description: 从文字脚本自动生成专业视频故事板（Word-to-VideoStory）— 基于结构化提示词工程 + 多模态AI工具链，将任意文字脚本转化为带角色参考、分镜画面、故事板文档和专业排版的全套输出。触发词："故事板""分镜""storyboard""视频脚本可视化"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

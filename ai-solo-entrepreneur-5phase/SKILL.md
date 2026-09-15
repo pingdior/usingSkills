@@ -2,7 +2,7 @@
 name: ai-solo-entrepreneur-5phase
 description: AI赋能独立创业者的5阶段作战体系 — 市场洞察、战略落地、执行管理、极速开发、冷启动与全球化验证。基于3个月跑通全球化线上服务的实战经验提炼。
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

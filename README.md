@@ -3,7 +3,7 @@
 技能管理项目，包含符合 Anthropic 官方标准的 Claude Skill 文件集合。
 
 - **作者**：pingdior
-- **技能数量**：40 个
+- **技能数量**：45 个
 
 ## 项目结构
 
@@ -26,7 +26,7 @@ manage-skills/
 - **metadata.author**：统一为 `pingdior`
 - **无 README.md**：技能文件夹内不包含 README
 
-## 技能列表（40 个）
+## 技能列表（45 个）
 
 | 技能名称 | 描述 |
 |---------|------|
@@ -67,6 +67,12 @@ manage-skills/
 | ai-native-lean-company | 精益 AI 原生公司 |
 | lovart-word2videostory | 文字→视频故事板生成技能 — 输入任意视频脚本/文案，自动产出角色资产+分镜拆解+画面提示词+专业排版故事板 |
 | four-deep-thinking-methods | 4 个深入思考方法 |
+
+| seed-extraction | 种子提炼：行业核心基因、四部件与五步法 |
+| seed-convergence | 交互式收敛行业种子：分轮提问、反例修剪、稳定性分层 |
+| digital-life-service-design | 数字生命范式：Seed / Harness / Memory 与端侧隐私 |
+| harness-design | Agent Harness：六阶段演进序、三层下沉、机制选型与决策卡 |
+| retention-diagnosis-loop | 留存诊断与自我迭代闭环：三角验证、共同账本 |
 
 ## 使用方式
 

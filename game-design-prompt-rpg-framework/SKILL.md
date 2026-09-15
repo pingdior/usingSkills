@@ -2,7 +2,7 @@
 name: game-design-prompt-rpg-framework
 description: Designs comprehensive RPG game frameworks from user concepts. Use when creating game concepts, world-building, or RPG system design. Trigger phrases: "RPG游戏", "游戏设计", "世界观构建", "游戏框架"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 
 技能管理项目，包含符合 Anthropic 官方标准的 Claude Skill 文件集合。
 
-- **作者**：woodgaya@gmail.com
+- **作者**：pingdior
 - **技能数量**：37 个
 
 ## 项目结构
@@ -23,7 +23,7 @@ manage-skills/
 - **文件夹命名**：kebab-case，无空格/下划线/大写
 - **核心文件**：`SKILL.md`（大小写敏感）
 - **YAML Frontmatter**：包含 `name`、`description`，可选 `metadata`（author、version）
-- **metadata.author**：统一为 `woodgaya@gmail.com`
+- **metadata.author**：统一为 `pingdior`
 - **无 README.md**：技能文件夹内不包含 README
 
 ## 技能列表（37 个）
@@ -200,3 +200,8 @@ manage-skills/
 
 - 创建新技能：参考 `usingSkills/create-skill-file.md`
 - Cursor Skill 规范：`~/.cursor/skills-cursor/create-skill/SKILL.md`
+- Anthropic Agent Skills 官方文档：https://docs.claude.com/en/docs/agents-and-tools/agent-skills
+
+## 许可
+
+本项目采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可，详见 `LICENSE`。

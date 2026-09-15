@@ -2,7 +2,7 @@
 name: thinking-navigation-assistant
 description: Transforms complex information into clear visual thinking models. Use when understanding complex concepts, visualizing logic, or creating structured explanations. Trigger phrases: "思维导航", "逻辑可视化", "思维模型", "概念图"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

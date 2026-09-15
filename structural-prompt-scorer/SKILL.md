@@ -2,7 +2,7 @@
 name: structural-prompt-scorer
 description: Scores and improves structural prompts (1-10 scale) with detailed feedback. Use when evaluating prompt quality, learning prompt optimization, or getting improvement suggestions. Trigger phrases: "提示词评分", "结构提示词", "改进建议", "Prompt分析"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 0.8
 ---
 

@@ -2,7 +2,7 @@
 name: efficient-prompt-template-gemini
 description: Defines a six-element efficient prompt structure (Role, Background, Task, Requirements, Example, Reflection) for Gemini and similar LLMs. Use when writing prompts, optimizing AI outputs, or teaching prompt engineering. Trigger phrases: "提示词结构", "高效提示词", "prompt模版", "六要素"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

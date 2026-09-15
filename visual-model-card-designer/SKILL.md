@@ -2,7 +2,7 @@
 name: visual-model-card-designer
 description: Transforms long content into logic-model or minimal-graphic vertical cards. Use when creating visual summaries, social media cards, or diagram-based content. Trigger phrases: "视觉卡片", "逻辑模型", "竖屏卡片", "图解"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 3.1
 ---
 

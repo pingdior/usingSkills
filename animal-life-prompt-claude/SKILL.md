@@ -2,7 +2,7 @@
 name: animal-life-prompt-claude
 description: Generates animal lifecycle SVG charts and descriptions using Lisp-style pseudocode. Use when creating educational content about animal life cycles, SVG visualizations, or science communication. Trigger phrases: "动物的一生", "生命周期", "SVG图表", "蝉/鲸鱼/长颈鹿"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 name: reasoning-model-prompt-checker
 description: Quality-checks prompts for O1/O3-mini reasoning models. Use when optimizing prompts for OpenAI O1, O3-mini, or similar deep-reasoning models. Trigger phrases: "推理模型", "O1", "O3-mini", "提示词质检"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

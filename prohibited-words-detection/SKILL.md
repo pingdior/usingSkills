@@ -2,7 +2,7 @@
 name: prohibited-words-detection
 description: Performs three-level risk scanning for platform compliance (absolute claims, false advertising, sensitive content). Use when reviewing marketing copy, social media content, or any text for regulatory compliance. Trigger phrases: "违禁词检测", "合规审查", "风险扫描", "广告法"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 name: four-deep-thinking-methods
 description: Four追问 modes for deep thinking - goal decomposition, Socratic questioning, first principles, pre-mortem. Use when facilitating reflection, strategic planning, or critical thinking. Trigger phrases: "追问模式", "目标拆解", "苏格拉底式", "第一性原理", "复盘前置"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

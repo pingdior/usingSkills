@@ -2,7 +2,7 @@
 name: ming-dynasty-game-prompt
 description: AI-driven educational historical simulation game set in 1645 Ming Dynasty Nanjing. Use when creating historical games, educational simulations, or period-accurate roleplay. Trigger phrases: "明朝游戏", "HISTORYLENS", "南明", "历史模拟"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

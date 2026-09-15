@@ -2,7 +2,7 @@
 name: how-to-write-prompts-claude-engineer
 description: Anthropic engineers' best practices for prompt writing. Use when improving prompts, teaching prompt engineering, or understanding model interaction. Trigger phrases: "Claude工程师", "提示词技巧", "不要角色扮演", "实话实说"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

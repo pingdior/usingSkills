@@ -2,7 +2,7 @@
 name: resume-expert
 description: Crafts ATS-optimized resumes for different country job markets. Use when writing resumes, tailoring for specific positions, or optimizing for applicant tracking systems. Trigger phrases: "简历", "resume", "求职", "/language english"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0
 ---
 

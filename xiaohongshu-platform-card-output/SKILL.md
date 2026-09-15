@@ -2,7 +2,7 @@
 name: xiaohongshu-platform-card-output
 description: Converts long content into Xiaohongshu/Instagram style visual cards. Use when creating social media card series, knowledge cards, or visual content for Xiaohongshu. Trigger phrases: "小红书卡片", "系列卡片", "视觉卡片", "4:5画布"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

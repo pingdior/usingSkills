@@ -2,7 +2,7 @@
 name: claude-enhanced-logic-thinking
 description: Activates Claude's comprehensive thinking protocol for deep reasoning before responding. Use when tackling complex problems, multi-step analysis, or when thorough consideration is needed. Trigger phrases: "深度思考", "逻辑推理", "thinking protocol", "Claude思考"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 name: reading-summary
 description: Applies the Hyperlegible Writing Standard for clear, scannable content. Use when writing documents, summaries, or content that needs zero-friction reading. Trigger phrases: "超可读", "阅读总结", "写作标准", "倒金字塔"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

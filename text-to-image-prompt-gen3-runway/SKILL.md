@@ -2,7 +2,7 @@
 name: text-to-image-prompt-gen3-runway
 description: Guides Gen-3 Alpha Runway video generation prompts. Use when creating video prompts for Runway, text-to-video, or Gen-3 Alpha. Trigger phrases: "Gen-3 Alpha", "Runway", "文生图", "视频提示词"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

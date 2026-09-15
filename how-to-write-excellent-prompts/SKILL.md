@@ -2,7 +2,7 @@
 name: how-to-write-excellent-prompts
 description: Two core principles for LLM prompts - everything character-describable is solvable; clarity of goal and constraints is key. Use when writing prompts or teaching prompt engineering. Trigger phrases: "优秀提示词", "目标明确", "约束流", "工作流"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

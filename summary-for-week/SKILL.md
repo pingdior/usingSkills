@@ -2,7 +2,7 @@
 name: summary-for-week
 description: Organizes weekly notes into a structured weekly summary with key insights, tasks, risks, and next-step recommendations. Use when the user wants to generate, refine, or standardize a weekly report from existing materials. Trigger phrases: "整理周报", "生成本周总结", "weekly summary", "本周复盘"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

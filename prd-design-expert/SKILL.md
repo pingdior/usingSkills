@@ -2,7 +2,7 @@
 name: prd-design-expert
 description: Creates product requirement specification documents from user stories. Use when writing PRDs, defining product features, or converting user stories to specs. Trigger phrases: "产品需求", "PRD", "需求规格说明书", "用户故事"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.3
 ---
 

@@ -2,7 +2,7 @@
 name: chatgpt-tasks-design
 description: ChatGPT Scheduled Tasks (automations) system prompt design. Use when implementing task scheduling, reminders, or iCal VEVENT format. Trigger phrases: "ChatGPT Tasks", "scheduled tasks", "automations", "RRULE"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

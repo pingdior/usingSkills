@@ -2,7 +2,7 @@
 name: enhance-llm-logic-analysis
 description: Guides step-by-step reasoning with JSON format output. Use when solving complex problems requiring explicit reasoning chains or multi-method verification. Trigger phrases: "推理过程", "逐步解释", "逻辑分析", "多方法验证"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

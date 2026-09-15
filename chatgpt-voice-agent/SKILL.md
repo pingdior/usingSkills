@@ -2,7 +2,7 @@
 name: chatgpt-voice-agent
 description: Creates prompts for ChatGPT voice agents with personality, tone, and state machine. Use when building voice agents, defining conversation flows, or OpenAI Realtime API. Trigger phrases: "语音代理", "voice agent", "ChatGPT语音", "state machine"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

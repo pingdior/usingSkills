@@ -2,7 +2,7 @@
 name: ai-native-lean-company
 description: Defines Lean AI Native paradigm - companies architected around AI with lean principles. Use when analyzing AI-first businesses, organizational design, or strategic transformation. Trigger phrases: "精益AI", "AI原生", "Lean AI Native", "自我优化企业"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

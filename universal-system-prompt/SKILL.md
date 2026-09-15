@@ -2,7 +2,7 @@
 name: universal-system-prompt
 description: Provides a quantum tapestry cognitive engine framework for advanced AI assistants. Use when the user needs deep multi-dimensional thinking, pattern recognition across concepts, or wants to activate comprehensive cognitive protocols. Trigger phrases: "量子织锦", "认知引擎", "深度思考", "系统初始化"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

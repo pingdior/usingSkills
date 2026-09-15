@@ -2,7 +2,7 @@
 name: internal-thinking-ai-framework
 description: Framework for internal thinking organization and AI structural thinking. Use when structuring AI reasoning, organizing thought processes, or designing cognitive frameworks. Trigger phrases: "内部思考", "AI结构词", "思考框架", "认知结构"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

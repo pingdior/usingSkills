@@ -2,7 +2,7 @@
 name: software-app-development-core-prompt
 description: Provides project development constitution with 5-layer structure (Strategy, Features, Interaction, Data Model, Visuals). Use when starting software projects, defining architecture, or establishing development constraints. Trigger phrases: "项目开发", "核心宪法", "技术铁律", "五层结构"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

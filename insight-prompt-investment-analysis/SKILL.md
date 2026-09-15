@@ -2,7 +2,7 @@
 name: insight-prompt-investment-analysis
 description: Generates rare, profound insights without user-provided topic. Use when seeking novel perspectives, cognitive reframing, or thought-provoking statements. Trigger phrases: "洞见", "洞见机关枪", "罕见洞见", "认知震撼"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 name: lisp-core-syntax
 description: Lisp/Scheme core syntax for prompt DSL and meta-programming. Use when writing Lisp-style prompts, defining DSLs, or understanding prompt structure. Trigger phrases: "Lisp语法", "Scheme", "括号语法", "元编程"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

@@ -2,7 +2,7 @@
 name: xiaohongshu-trending-content-script
 description: Generates Xiaohongshu viral copy and 2-minute voiceover scripts through multi-turn dialogue. Use when creating Xiaohongshu content, analyzing viral elements, or writing high-engagement posts. Trigger phrases: "小红书爆款", "爆款文案", "口播脚本", "小红书流量"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

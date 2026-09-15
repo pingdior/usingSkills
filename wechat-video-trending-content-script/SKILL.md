@@ -2,7 +2,7 @@
 name: wechat-video-trending-content-script
 description: Generates viral WeChat Video (视频号) scripts with platform-specific optimization. Use when creating short-form video content for WeChat Video, designing hooks, or optimizing for social recommendation. Trigger phrases: "视频号", "爆款脚本", "微信视频", "黄金3秒"
 metadata:
-  author: woodgaya@gmail.com
+  author: pingdior
   version: 1.0.0
 ---
 

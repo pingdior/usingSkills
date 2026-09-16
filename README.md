@@ -3,7 +3,7 @@
 技能管理项目，包含符合 Anthropic 官方标准的 Claude Skill 文件集合。
 
 - **作者**：pingdior
-- **技能数量**：45 个
+- **技能数量**：46 个
 
 ## 项目结构
 
@@ -72,6 +72,7 @@ manage-skills/
 | digital-life-service-design | 数字生命范式：Seed / Harness / Memory 与端侧隐私 |
 | harness-design | Agent Harness：六阶段演进序、三层下沉、机制选型与决策卡 |
 | retention-diagnosis-loop | 留存诊断与自我迭代闭环：三角验证、共同账本 |
+| multi-angle-evidence-analysis | 融合六顶思考帽与证据检验，扩展视角并追踪问题机制 |
 
 ## 使用方式
 

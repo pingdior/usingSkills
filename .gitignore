@@ -1,2 +1,4 @@
 .DS_Store
 Claude-Guide-to-Building-Skill.pdf
+__pycache__/
+*.pyc

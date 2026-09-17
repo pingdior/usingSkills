@@ -49,12 +49,10 @@ Agent 决定要不要加载一个 skill 时，**只能看到 `name` 和 `descrip
 
 所以：**要在什么场景被用上，就把那些话写进 `description`。**
 
-### 2. `SKILL.md` 守长度
+### 2. `SKILL.md` 保持聚焦，细节按需加载
 
-规则文件超过一两百行，**靠后的条款会事实上失效**。所以：
-
-- `SKILL.md` 只放**判据、顺序与产出格式**
-- 具体问法、示例、弹药 → 一律进 `references/`
+入口保留用途、关键决策、必要约束与交付要求；仅在特定场景需要的问法、契约与实现细节放入 `references/`，并说明何时读取。
+没有「超过某个行数，后面必然失效」的通用阈值。以真实任务中的遵守情况、信息完整性和成本验证效果，避免重复或互相冲突的规则。
 
 ### 3. 一个 skill 只解决一件事
 
@@ -66,15 +64,35 @@ Agent 决定要不要加载一个 skill 时，**只能看到 `name` 和 `descrip
 
 ### 一、Agent / 系统设计（5 个）
 
-给"做产品的人、做 Agent 的人"用。这一组是成套的方法论，有先后顺序。
+给"做产品的人、做 Agent 的人"用。这一组共享交接契约，按任务和证据缺口选用，不要求每次串行运行全部技能。
 
 | 技能 | 说明 | 参考资料 |
 |---|---|:---:|
-| `seed-extraction` | 种子提炼：行业核心基因、四部件与五步法 |  |
-| `seed-convergence` | 交互式收敛行业种子：分轮提问、反例修剪、稳定性分层 | ✅ |
-| `digital-life-service-design` | 数字生命范式：Seed / Harness / Memory 与端侧隐私 |  |
-| `harness-design` | Agent Harness：六阶段演进序、三层下沉、机制选型与决策卡 | ✅ |
-| `retention-diagnosis-loop` | 留存诊断与自我迭代闭环：三角验证、共同账本 |  |
+| `seed-extraction` | 种子提炼：条目类型、四部件、证据与版本化交接契约 | ✅ |
+| `seed-convergence` | 交互收敛：复用材料、按缺口提问、反例与规范来源检查 | ✅ |
+| `digital-life-service-design` | 服务设计：Seed / Harness / Memory、目标取舍与数据流 |  |
+| `harness-design` | 运行设计：架构选择、机制决策、权限与外部副作用恢复 | ✅ |
+| `retention-diagnosis-loop` | 价值与留存诊断：测量、实验、分类型记忆及策略发布 | ✅ |
+
+#### Agent 设计技能 v2 的交接与验证
+
+配套使用时，把这五个文件夹放在同一技能目录，保留各自 `references/`。单独安装仍可分析和出草稿；引用契约不可用时需标记交接缺口，不能假定生产批准。
+
+- [种子契约](seed-extraction/references/seed-contract.md)：种子字段、状态、版本和批准范围的唯一维护来源。
+- [运行契约](harness-design/references/runtime-contract.md)：任务状态、工具权限、幂等与恢复。
+- [测量与实验](retention-diagnosis-loop/references/measurement.md)：事件关联、成熟窗口、基线和实验口径。
+- [记忆生命周期](retention-diagnosis-loop/references/memory-lifecycle.md)：个人偏好、推断、经验和策略的不同生效路径。
+
+v1 迁移时补齐类型、范围、证据状态和有效批准记录；不能只升级版本号就宣布旧产物获批。Harness 统一指运行时外壳，环境接入是其工具 / 适配子部分。
+
+本地一致性检查与检查器测试（Python 3.10+，仅标准库）：
+
+```bash
+python3 scripts/check_agent_design_skills.py
+python3 -m unittest discover -s tests/agent_design -v
+```
+
+行为回归场景与执行方法见 [评测说明](evals/agent-design/README.md)。一致性检查通过不等于模型行为已验证；未运行模型评测时不得报告行为通过率。
 
 ### 二、思考方法（6 个）
 

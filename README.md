@@ -69,9 +69,9 @@ Agent 决定要不要加载一个 skill 时，**只能看到 `name` 和 `descrip
 | 技能 | 说明 | 参考资料 |
 |---|---|:---:|
 | `seed-extraction` | 种子提炼：条目类型、四部件、证据与版本化交接契约 | ✅ |
-| `seed-convergence` | 交互收敛：复用材料、按缺口提问、反例与规范来源检查 | ✅ |
+| `seed-convergence` | 交互收敛：按缺口提问、反例检查与下一步信息充分度 | ✅ |
 | `digital-life-service-design` | 服务设计：Seed / Harness / Memory、目标取舍与数据流 |  |
-| `harness-design` | 运行设计：架构选择、机制决策、权限与外部副作用恢复 | ✅ |
+| `harness-design` | 运行设计：架构选择、长期运行机制、证据分类与恢复 | ✅ |
 | `retention-diagnosis-loop` | 价值与留存诊断：测量、实验、分类型记忆及策略发布 | ✅ |
 
 #### Agent 设计技能 v2 的交接与验证
@@ -80,10 +80,15 @@ Agent 决定要不要加载一个 skill 时，**只能看到 `name` 和 `descrip
 
 - [种子契约](seed-extraction/references/seed-contract.md)：种子字段、状态、版本和批准范围的唯一维护来源。
 - [运行契约](harness-design/references/runtime-contract.md)：任务状态、工具权限、幂等与恢复。
+- [长期运行机制](harness-design/references/long-running-runtime.md)：按需选择上下文工作集、持久重派预算、写入隔离、依赖调度、配额准入、事件索引和告警生命周期。
+- [机制证据记录](harness-design/references/mechanism-evidence.json)：27 条机制逐项区分源码行为、已有测试说明与待验证运行收益，另附访谈充分度记录及 8 篇参考来源。
 - [测量与实验](retention-diagnosis-loop/references/measurement.md)：事件关联、成熟窗口、基线和实验口径。
 - [记忆生命周期](retention-diagnosis-loop/references/memory-lifecycle.md)：个人偏好、推断、经验和策略的不同生效路径。
 
 v1 迁移时补齐类型、范围、证据状态和有效批准记录；不能只升级版本号就宣布旧产物获批。Harness 统一指运行时外壳，环境接入是其工具 / 适配子部分。
+
+长期运行增补后，`harness-design` 与 `seed-convergence` 为 2.1.0，其余三项为 2.0.0；交接协议仍为 `seed/v2`。
+这些是设计技能，不是底层 Harness 实现。证据记录中的 `article_reported` 只表示文章转述，不表示本仓库直接复核源码提交或复跑测试；运行收益目前均为 `unmeasured`，不得从结构校验推算生产效果。
 
 本地一致性检查与检查器测试（Python 3.10+，仅标准库）：
 

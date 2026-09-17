@@ -1,0 +1,761 @@
+{
+  "schema_version": "harness-mechanism-evidence/v1",
+  "reviewed_at": "2026-09-17",
+  "local_validation_scope": "仅文档结构、引用、证据字段与场景规格；未执行目标 Harness、数据库故障注入、模型对照或运行收益实验。",
+  "sources": [
+    {
+      "id": "event-index",
+      "title": "增量事件索引",
+      "url": "https://towow.net/articles/harness-event-index",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "dag-dispatch",
+      "title": "DAG 任务调度",
+      "url": "https://towow.net/articles/harness-dag-dispatch",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "quota-admission",
+      "title": "预测配额调度",
+      "url": "https://towow.net/articles/harness-quota-admission",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "generation-fencing",
+      "title": "世代号写入隔离",
+      "url": "https://towow.net/articles/harness-generation-fencing",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "context-workset",
+      "title": "上下文工作集",
+      "url": "https://towow.net/articles/harness-context-workset",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "alert-dedup",
+      "title": "机器告警去重",
+      "url": "https://towow.net/articles/harness-alert-dedup",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "bounded-redispatch",
+      "title": "有界重派",
+      "url": "https://towow.net/articles/harness-bounded-redispatch",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    },
+    {
+      "id": "interview-stop",
+      "title": "访谈停止判定",
+      "url": "https://towow.net/articles/harness-interview-stop",
+      "published_at": "2026-09-15",
+      "reviewed_at": "2026-09-17",
+      "kind": "implementation_walkthrough",
+      "verification_boundary": "已阅读文章；未直接复核底层源码提交，未重跑其测试或生产负载。"
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "001",
+      "name": "观察—行动循环",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义观察—行动循环的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "任务合格完成率",
+          "决策所需状态保留率",
+          "成本与时延"
+        ]
+      }
+    },
+    {
+      "id": "002",
+      "name": "完成与停止判据",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义完成与停止判据的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "错误放行与误阻塞",
+          "反复打磨次数",
+          "完成验收时延"
+        ]
+      }
+    },
+    {
+      "id": "003",
+      "name": "分级预算",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义分级预算的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "预算超限",
+          "可恢复交接比例",
+          "在途动作核对率"
+        ]
+      }
+    },
+    {
+      "id": "004",
+      "name": "进展检测与破环",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义进展检测与破环的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "无效重复消耗",
+          "合法等待误中断",
+          "恢复成功率"
+        ]
+      }
+    },
+    {
+      "id": "005",
+      "name": "显式状态图",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明：依赖成功后进入就绪集合，以当前有效边计算无权重最长链，平局稳定处理；该说明覆盖 DAG 调度子部分，不证明所有执行状态图语义。",
+        "source_ids": [
+          "dag-dispatch"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章说明核对过最长链计算、派发消费方与已有测试，提到撤边未进入就绪集合的修复背景；本仓库未重跑。",
+        "source_ids": [
+          "dag-dispatch"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "单位节点最长链可能帮助推进依赖；未取得同负载下工期改善对照，不能声称最优排程。",
+        "metrics": [
+          "依赖误放行",
+          "总交付时间",
+          "饥饿与等待时间"
+        ]
+      }
+    },
+    {
+      "id": "006",
+      "name": "计划工件",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义计划工件的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "过期计划导致的返工",
+          "计划维护成本"
+        ]
+      }
+    },
+    {
+      "id": "007",
+      "name": "外化任务清单",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义外化任务清单的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "漏项与无理由删项",
+          "清单维护成本"
+        ]
+      }
+    },
+    {
+      "id": "008",
+      "name": "持久化与恢复",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义持久化与恢复的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "恢复正确性",
+          "重复副作用",
+          "恢复时延"
+        ]
+      }
+    },
+    {
+      "id": "009",
+      "name": "分离运行、验证与改进循环",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义分离运行、验证与改进循环的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "反馈闭环越权",
+          "定位故障时间",
+          "运行与改进成本"
+        ]
+      }
+    },
+    {
+      "id": "010",
+      "name": "上下文取舍",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义上下文取舍的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "必要信息遗漏",
+          "任务成功率",
+          "检索成本"
+        ]
+      }
+    },
+    {
+      "id": "011",
+      "name": "分层配置",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义分层配置的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "未经授权的配置覆盖",
+          "合法配置误阻塞"
+        ]
+      }
+    },
+    {
+      "id": "012",
+      "name": "按需加载",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义按需加载的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "必要材料取回率",
+          "漏召回",
+          "额外读取时延"
+        ]
+      }
+    },
+    {
+      "id": "013",
+      "name": "上下文压缩",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义上下文压缩的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "关键事实丢失",
+          "压缩后返工",
+          "上下文成本"
+        ]
+      }
+    },
+    {
+      "id": "014",
+      "name": "主动压缩",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义主动压缩的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "过早或过晚压缩",
+          "任务连续性",
+          "额外调用成本"
+        ]
+      }
+    },
+    {
+      "id": "015",
+      "name": "压缩契约",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义压缩契约的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "保真字段缺失",
+          "失败路径重走",
+          "验证与重试成本"
+        ]
+      }
+    },
+    {
+      "id": "016",
+      "name": "独立上下文",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义独立上下文的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "独立任务交付质量",
+          "协调成本",
+          "端到端时延"
+        ]
+      }
+    },
+    {
+      "id": "017",
+      "name": "外部工件存储",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义外部工件存储的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "工件可寻址率",
+          "版本失配",
+          "回读成本"
+        ]
+      }
+    },
+    {
+      "id": "018",
+      "name": "显式分页 / 裁剪",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章中的工作集区分完整原文与投影，完整模式下不静默截断必读范围；这是材料交付行为，不证明任意工具均已实现分页契约。",
+        "source_ids": [
+          "context-workset"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章列出长判据不截断、低排序反例进入必读、缺少审阅改动材料报错、保存后重核来源等测试；本仓库未重跑。",
+        "source_ids": [
+          "context-workset"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "有望减少局部材料被当成完整证据的误判；未有端到端质量、成本对照。",
+        "metrics": [
+          "静默不完整导致的误判",
+          "续取成功率",
+          "读取成本"
+        ]
+      }
+    },
+    {
+      "id": "019",
+      "name": "错误上下文修复",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义错误上下文修复的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "错误观察复用",
+          "重启后正确性",
+          "丢失可信信息"
+        ]
+      }
+    },
+    {
+      "id": "020",
+      "name": "缓存友好布局",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义缓存友好布局的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "实际缓存命中",
+          "计费与时延",
+          "权限新鲜度"
+        ]
+      }
+    },
+    {
+      "id": "021",
+      "name": "信任边界",
+      "source_behavior": {
+        "status": "design_recommendation",
+        "summary": "本仓库定义信任边界的设计要求；本轮未将其完整语义对应到直接复核的运行时源码提交。",
+        "source_ids": []
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "未定位本条完整机制的运行时测试证据；结构检查与设计响应场景规格不代表已执行验证。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "需在目标任务和可比负载上验证效果，不能从设计要求或测试说明推算运行收益。",
+        "metrics": [
+          "不可信内容导致的越权",
+          "合法任务误拦截"
+        ]
+      }
+    },
+    {
+      "id": "022",
+      "name": "增量事件索引",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明已提交新事件增量入桶、定位命中后惰性解码；日志是事实来源，索引可重建，当前实现有单线程使用假设。",
+        "source_ids": [
+          "event-index"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章说明源码与已有测试提供增量索引验证入口，未给出本轮线上吞吐复测；本仓库未直接检查测试文件或重跑。",
+        "source_ids": [
+          "event-index"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "可能减少重复维护与无关正文解码；教学十万条/七条不是实测速度，冷启动和全量查询仍有成本。",
+        "metrics": [
+          "查询时延",
+          "增量维护成本",
+          "重建正确性与成本"
+        ]
+      }
+    },
+    {
+      "id": "023",
+      "name": "预测配额准入",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明组合多种速率、剩余额度和重置时间计算并发建议，并检查观测新鲜度和多个配额窗口；默认影子模式，自动迁移关闭。",
+        "source_ids": [
+          "quota-admission"
+        ]
+      },
+      "existing_tests": {
+        "status": "not_identified",
+        "summary": "文章说明已核对公式、默认参数和影子状态，但未提供足以复核的完整测试覆盖明细；本仓库未重跑。",
+        "source_ids": []
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "可能降低共享额度耗尽导致的中断，也可能闲置容量；未取得独立成本或质量对照，需先观察预测偏差和任务连续性。",
+        "metrics": [
+          "预测偏差",
+          "意外中断",
+          "有效完成量",
+          "等待与闲置"
+        ]
+      }
+    },
+    {
+      "id": "024",
+      "name": "世代号写入隔离",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明相关存储以 CAS 接管并递增世代，写入条件核对持有者、世代与租约期限；只覆盖这些写入路径，部分编排拒绝事件落点未完成。",
+        "source_ids": [
+          "generation-fencing"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章列出现有 PostgreSQL 测试覆盖并发抢占、旧持有者迟到写入被拒、有效租约不被夺走；作者与本仓库均未在本轮重跑数据库测试。",
+        "source_ids": [
+          "generation-fencing"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "存储隔离不证明端到端自动接管已验收，也不保护未参与检查的外部写入；实际接管时延和收益待测。",
+        "metrics": [
+          "旧世代错误接收",
+          "有效写入误拒绝",
+          "接管时延"
+        ]
+      }
+    },
+    {
+      "id": "025",
+      "name": "机器告警生命周期",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明按机器来源、问题指纹和开放告警查找归并目标，记录复发；生命周期读取失败时可能退回仅查开集，具名工作会话不参与该去重。",
+        "source_ids": [
+          "alert-dedup"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章列出同模板归并、原因分档、具名会话保留、已结束条目不作锚点等已有测试；本仓库未重跑。",
+        "source_ids": [
+          "alert-dedup"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "可能减少重复待办和人工负担，也可能错误归并或抑制告警；未有服务器全链路复测和本轮效果对照。",
+        "metrics": [
+          "重复待办量",
+          "漏报与错误归并",
+          "处理时延"
+        ]
+      }
+    },
+    {
+      "id": "026",
+      "name": "上下文工作集",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明按角色与材料要求组织工作集，从保存来源按范围取原文，分别记录原文与受限审计投影；完整模式可超软字节预算，缺必需来源时报不完整。",
+        "source_ids": [
+          "context-workset"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章列出长判据保留、反例必读、缺审阅材料报错、来源重核等已有测试；这些说明不等于本仓库实际运行过。",
+        "source_ids": [
+          "context-workset"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "可回查材料取舍可能改善交接，但原文交付不证明搜索充分或理解正确；未有任务成功率提升实测。",
+        "metrics": [
+          "必读材料缺失",
+          "来源失配",
+          "交接返工",
+          "读取成本"
+        ]
+      }
+    },
+    {
+      "id": "027",
+      "name": "跨轮次有界重派",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明按任务或触发标识保存重派次数，达限后持久停派并避免重复派发；首次正常启动不计自愈重派，停止标记有显式清除入口。",
+        "source_ids": [
+          "bounded-redispatch"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章列出上限内允许、达到上限阻止启动、停止标记幂等与不同候选来源有界等构造测试；本仓库未重跑。",
+        "source_ids": [
+          "bounded-redispatch"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "能够限制指定路径的自动尝试，但不自带副作用幂等；按故障类型的恢复成功率、实际费用节省及转交效果待测。",
+        "metrics": [
+          "按失败类型的重派成功次数分布",
+          "无效重派消耗",
+          "停派后问题解决率"
+        ]
+      }
+    }
+  ],
+  "related_methods": [
+    {
+      "id": "interview-readiness",
+      "name": "下一步信息充分度",
+      "owner_skill": "seed-convergence",
+      "source_behavior": {
+        "status": "article_reported",
+        "summary": "文章说明四项必要检查先于四维质量评分，输出足够、有条件足够或不足；结构一致性校验没有重新执行全部阈值分支。项目阈值不是通用学术算法。",
+        "source_ids": [
+          "interview-stop"
+        ]
+      },
+      "existing_tests": {
+        "status": "article_reported",
+        "summary": "文章说明已找到确定性决策代码与相关测试入口，未有判停建议与人工一致性对照；本仓库未重跑。",
+        "source_ids": [
+          "interview-stop"
+        ]
+      },
+      "runtime_benefit": {
+        "status": "unmeasured",
+        "summary": "是否减少无谓访谈、遗漏和下游返工尚未验证，不能把评分当成功概率。",
+        "metrics": [
+          "与人工判断分歧",
+          "关键遗漏",
+          "后续返工",
+          "无谓追问与访谈时间"
+        ]
+      }
+    }
+  ]
+}

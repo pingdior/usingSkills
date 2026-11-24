@@ -6,7 +6,7 @@
 - **技能数量**：47 个，分 7 类
 - **许可**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)（可自由使用和修改，需署名）
 
-> 🆕 **最近更新**：新增 [`rapid-learn`](#七学习1-个)，一个限时快速学习教练，支持两种模式：成人自学一个方向，或者孩子学高中课程的某个单元。
+> 🆕 **最近更新**：[`rapid-learn`](#七学习1-个) 升级到 v1.1，新增**高三理科复习分支**：一轮/二轮复习、错题和试卷复盘、跨对话累积的薄弱点总表，以及数学、物理、化学、生物各科的错因分类和验算规则。
 
 ---
 
@@ -46,6 +46,7 @@ cp -R /tmp/usingSkills/rapid-learn ~/.workbuddy/skills/   # WorkBuddy
 |---|---|---|
 | 几小时内快速入门一个方向、项目、论文或代码仓库 | `rapid-learn`（domain 模式） | 学完把 🟡 待补清单交给它，生成 7 天补漏计划 |
 | 孩子复习高中某个单元（数学、语文等） | `rapid-learn`（course 模式） | 用附带的错题本和家长报告模板 |
+| 高三理科复习、月考错题复盘 | `rapid-learn`（高三复习分支） | 薄弱点总表跨对话累积，每次开场先复测 |
 | 做新产品或新业务 | `seed-extraction` | → `seed-convergence` → `digital-life-service-design` |
 | 设计 AI Agent 产品 | `digital-life-service-design` | → `harness-design` → `retention-diagnosis-loop` |
 | Agent 空转、烧钱或失控 | `harness-design` | — |
@@ -181,7 +182,7 @@ python3 -m unittest discover -s tests/agent_design -v
 
 | 技能 | 说明 | 附带资料 |
 |---|---|:---:|
-| `rapid-learn` | 限时快速学习教练，分 6 个阶段：定标 → 地图 → 拆核心 → 实战 → 压力测试 → 沉淀。包含 **domain 模式**（成人学方向、项目、论文、代码仓库）和 **course 模式**（孩子学高中单元：4 节 × 45 分钟、三级提示不直接给答案、出题必验算、不代写作业） | ✅ |
+| `rapid-learn` | 限时快速学习教练，分 6 个阶段：定标 → 地图 → 拆核心 → 实战 → 压力测试 → 沉淀。包含 **domain 模式**（成人学方向、项目、论文、代码仓库）和 **course 模式**（孩子学高中单元：4 节 × 45 分钟、三级提示不直接给答案、出题必验算、不代写作业）。course 模式下含 **高三复习分支**：章节复习、错题/试卷复盘、专题小练三种用法，内置福建考情（数学考新高考Ⅰ卷，物化生为福建自主命题） | ✅ |
 
 `rapid-learn` 的几个设计要点：
 
@@ -189,6 +190,7 @@ python3 -m unittest discover -s tests/agent_design -v
 - **防编造**：事实性结论要标来源或标"待核实"；健康医学类内容要标明证据等级。
 - **卡关有出口**：同一个点 2 次都没过，就标成 🟡 先往下走，最后统一补。
 - **学完能留下东西**：Obsidian 友好的学习笔记、错题本、家长报告，以及第 1/3/7 天的复习题。
+- **理科专项**：拍照题先复述条件、等学生确认再讲；按学科给出错因分类和验算方法（物理查量纲、化学三守恒、生物对照课本规范表述）；不把 AI 出的题冒充高考真题。
 - **不用 agent 也能用**：[`assets/prompts/`](rapid-learn/assets/prompts/) 里有可直接粘贴到 ChatGPT、豆包、Kimi 的单条提示词，分[成人版](rapid-learn/assets/prompts/domain-prompt.md)和[孩子版](rapid-learn/assets/prompts/course-kid-prompt.md)。
 
 ---

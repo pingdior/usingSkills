@@ -1,9 +1,9 @@
 ---
 name: rapid-learn
-description: 限时快速学习教练（4 小时冲刺 / 分段课时）。This skill should be used when the user wants to quickly learn a project, research direction, codebase, paper cluster, or a high-school course unit (高中数学/语文/物理等) within limited time — triggers include "快速学习"、"4小时学会"、"速通"、"带我学"、"学一个方向"、"啃这个仓库/论文"、"高二数学某一章"、"孩子要复习某单元"、"rapid learn". Two modes are supported — domain (项目/方向, for adult self-learning) and course (高中课程单元, used by a teenager). Book mode is planned for v2.
+description: 限时快速学习教练（4 小时冲刺 / 分段课时）。This skill should be used when the user wants to quickly learn a project, research direction, codebase, paper cluster, a high-school course unit (高中数学/语文/物理等), or 高三 exam review (高考一轮/二轮复习、错题复盘、试卷复盘、理科物化生数) within limited time — triggers include "快速学习"、"4小时学会"、"速通"、"带我学"、"学一个方向"、"啃这个仓库/论文"、"高二数学某一章"、"孩子要复习某单元"、"高三复习"、"一轮复习"、"错题复盘"、"月考试卷分析"、"rapid learn". Modes — domain (项目/方向, adult self-learning) and course (高中课程单元, used by a teenager; includes a 高三 review branch with Fujian exam context and science subject rules). Book mode is planned for v2.
 metadata:
   author: pingdior
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # rapid-learn · 限时快速学习教练
@@ -24,6 +24,8 @@ metadata:
 1. 判断模式，不确定时只问一句："这次学的是**一个方向/项目**，还是**一门课的某个单元**？"
    - 方向 / 项目 / 论文 / 代码仓库 / 行业 / 工具 → 读取 `references/mode-domain.md`
    - 高中课程单元（数学、语文、物理、化学、英语…）→ 读取 `references/mode-course.md`
+   - 高三复习备考（一轮/二轮/错题复盘/试卷复盘）→ 读取 `references/mode-gaokao-review.md`；理科另读 `references/subjects-science.md`
+   - 高三复习时，先检查固定档案目录 `~/高三复习/`（`档案.md` + `薄弱点总表.md`）是否存在：存在则读取后直接开始，不重复建档。**不要放在当前工作区**——新对话会换工作区目录，档案会丢
    - 技能类书籍 → v1 暂不支持专门模式：告知用户，并按 domain 模式执行，额外加一条硬规则"必须粘贴目录与精读章节原文，没有原文不讲细节"
 2. 按对应模式文件里的「开场信息卡」收集信息，**缺几项问几项，一次问完，不要逐条盘问**。
 3. 信息齐了，复述一遍计划（阶段 + 时间 + 交付物），得到确认后开始。
@@ -63,9 +65,12 @@ metadata:
   - `domain-note.md`：方向学习笔记（Obsidian 友好）
   - `course-mistake-book.md`：错题本 + 复习题
   - `parent-report.md`：给家长的一页进度报告（course 模式）
+  - `weakness-tracker.md`：高三薄弱点总表（跨会话累积，每次开场先读）
 - 默认写入当前工作目录 `learn-notes/YYYY-MM-DD-<主题>.md`。
 - **写入知识库（Obsidian 等）前先问用户目标目录**，确认目录存在后再写，不擅自写入。
 - 结束时提醒：🟡 清单可用于生成后续 7 天补漏计划（每天 1 个 30–45 分钟任务 + 成功标准 + 当天避免事项）。
+
+学生首次使用时，可把 `assets/高三使用说明.md` 的内容给学生看（一页，说明怎么开口、三种用法和约定）。
 
 ## 脱离 Agent 使用
 

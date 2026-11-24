@@ -168,14 +168,12 @@ python3 -m unittest discover -s tests/agent_design -v
 | `summary-for-week` | 周报整理与复盘总结 |  |
 | `software-app-development-core-prompt` | 软件项目开发的核心规则 |  |
 | `create-vibe-project` | Vibe Coding 的 8 条工程纪律，用于开新项目或给 AI 编码 agent 立规矩 |  |
-| `cto-for-videcoding` | 指导 AI 编码 agent 开发多端数字服务（多角色、合规、支付、AI 集成）。建议作为 `AGENTS.md` 或 `.cursor/rules/` 加载 ⚠️ |  |
+| `cto-for-videcoding` | 指导 AI 编码 agent 开发多端数字服务（多角色、合规、支付、AI 集成）。也可作为 `AGENTS.md` 或 `.cursor/rules/` 加载 |  |
 | `prohibited-words-detection` | 违禁词和合规检测 |  |
 | `ai-communication-methods` | 和 AI 交流的 4 种方式 |  |
 | `ai-native-lean-company` | 精益 AI 原生公司 |  |
 | `ai-solo-entrepreneur-5phase` | AI 独立创业者的 5 阶段打法：市场洞察、战略落地、执行管理、极速开发、冷启动与全球化验证 |  |
 | `lisp-core-syntax` | Lisp 核心语法 |  |
-
-> ⚠️ `cto-for-videcoding` 目前缺少 YAML frontmatter，agent 不会自动触发它，需要手动加载，或者放进项目规则文件里。
 
 ### 七、学习（1 个）
 

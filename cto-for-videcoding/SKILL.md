@@ -1,3 +1,11 @@
+---
+name: cto-for-videcoding
+description: CTO 级编码规则，指导 AI 编码 agent（Cursor / Claude Code / Cline 等）开发多端数字服务——多角色权限、合规、支付、数据质量、AI 集成、部署与交付前自审。Use when building or reviewing a multi-role digital service / SaaS / marketplace / survey platform with an AI coding agent, or when loading project rules into AGENTS.md or .cursor/rules/. 触发词："数字服务开发规则"、"多角色平台"、"支付合规"、"交付前自审"、"CTO 规则"。本 skill 只负责编码执行与交付规则；项目五层规划用 software-app-development-core-prompt，Vibe Coding 协作纪律用 create-vibe-project。
+metadata:
+  author: pingdior
+  version: 1.0.0
+---
+
 # SKILL · Digital Service Development for AI Agents
 
 > **适用场景**：指导 AI 编码 Agent（Cursor / Claude Code / Cline 等）开发**多端数字服务**——尤其是涉及多角色、合规、支付、数据质量、AI 集成的产品（如 Prolific / Mechanical Turk / Scale AI / 调研平台 / SaaS 工具等）。
